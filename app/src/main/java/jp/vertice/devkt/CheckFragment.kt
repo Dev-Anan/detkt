@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
  * A simple [Fragment] subclass.
  */
 class CheckFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,6 +18,7 @@ class CheckFragment : Fragment() {
         setHasOptionsMenu(true)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_check, container, false)
+
     }
 
 
