@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right">
+
+    <ImageView
+            android:id="@+id/btnNotification"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:src="@drawable/ic_notification" />
+
+    <!-- Badge Count -->
+    <TextView
+            android:id="@+id/badgeNotification"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/badge_circle"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="99+"
+            tools:ignore="SmallSp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+</RelativeLayout>

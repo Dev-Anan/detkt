@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorDesignTheme</color>
+    <color name="colorPrimaryDark">#008064</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorDesignTheme">#ff0000</color>
+    <color name="colorDesignThemeLight">#ff5a36</color>
+    <color name="colorDesignThemeDark">#c20000</color>
+    <color name="colorDesignToolbar">#FFFFFF</color>
+    <color name="colorDesignBgMenu">#FFFFFF</color>
+    <color name="colorDesignOverlayToolbar">#000000</color>
+
+    <color name="colorTextBody">#000000</color>
+    <color name="colorTextHeader">#FFFFFF</color>
+
+</resources>

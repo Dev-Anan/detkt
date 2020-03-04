@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_nav"
+        app:startDestination="@id/mainFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="jp.vertice.devkt.MainFragment"
+            android:label="fragment_main"
+            tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/to_event"
+                app:destination="@id/eventFragment" />
+        <action
+                android:id="@+id/to_coupon"
+                app:destination="@id/couponFragment" />
+        <action
+                android:id="@+id/to_contact"
+                app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/eventFragment"
+            android:name="jp.vertice.devkt.EventFragment"
+            android:label="fragment_event"
+            tools:layout="@layout/fragment_event">
+        <action
+                android:id="@+id/to_event_detail"
+                app:destination="@id/eventDetailFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/couponFragment"
+            android:name="jp.vertice.devkt.CouponFragment"
+            android:label="fragment_coupon"
+            tools:layout="@layout/fragment_coupon" />
+    <fragment
+            android:id="@+id/contactFragment"
+            android:name="jp.vertice.devkt.ContactFragment"
+            android:label="fragment_contact"
+            tools:layout="@layout/fragment_contact" />
+    <fragment
+            android:id="@+id/eventDetailFragment"
+            android:name="jp.vertice.devkt.EventDetailFragment"
+            android:label="fragment_event_detail"
+            tools:layout="@layout/fragment_event_detail" />
+
+    <fragment
+            android:id="@+id/checkFragment"
+            android:name="jp.vertice.devkt.CheckFragment"
+            android:label="fragment_check"
+            tools:layout="@layout/fragment_check" >
+        <deepLink
+                android:id="@+id/deepLink"
+                app:uri="nav://check" />
+    </fragment>
+
+
+    <fragment
+            android:id="@+id/personalFragment"
+            android:name="jp.vertice.devkt.PersonalFragment"
+            android:label="fragment_personal"
+            tools:layout="@layout/fragment_personal" />
+
+
+</navigation>

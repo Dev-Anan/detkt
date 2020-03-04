@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintVertical_weight="3"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="4dp"
+                android:background="@color/colorDesignBgMenu"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:id="@+id/imgMain"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_default"
+                    app:layout_constraintBottom_toTopOf="@+id/imgBtnHomePage"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBtnContact"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="2" />
+
+            <ImageButton
+                    android:id="@+id/imgBtnContact"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:contentDescription="contact"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/button_tel"
+                    app:layout_constraintBottom_toTopOf="@+id/imgBtnEvent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/imgMain"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="1" />
+
+            <ImageButton
+                    android:id="@+id/imgBtnEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/button_event"
+                    app:layout_constraintBottom_toTopOf="@+id/imgBtnCoupon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnInspection"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtnContact"
+                    app:layout_constraintVertical_weight="1" />
+
+            <ImageButton
+                    android:id="@+id/imgBtnHomePage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/button_home"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBtnInspection"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgMain"
+                    app:layout_constraintVertical_weight="1" />
+
+            <ImageButton
+                    android:id="@+id/imgBtnInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/button_web"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBtnCoupon"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnHomePage"
+                    app:layout_constraintTop_toBottomOf="@+id/imgMain"
+                    app:layout_constraintVertical_weight="1" />
+
+            <ImageButton
+                    android:id="@+id/imgBtnCoupon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDesignBgMenu"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/button_ticket"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnInspection"
+                    app:layout_constraintTop_toBottomOf="@+id/imgMain"
+                    app:layout_constraintVertical_weight="1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

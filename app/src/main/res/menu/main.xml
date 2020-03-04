@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_notification"
+            android:actionLayout="@layout/notification_badge"
+            android:icon="@drawable/ic_notification"
+            android:orderInCategory="100"
+            android:title="notification"
+            app:showAsAction="always" />
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:icon="@drawable/ic_menu_manage"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item
+            android:id="@+id/action_add"
+            android:icon="@drawable/ic_action_add"
+            android:title="@string/action_add_contact"
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/action_edit"
+            android:icon="@drawable/ic_action_edit"
+            android:title="@string/action_add_contact"
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/action_del"
+            android:icon="@drawable/ic_action_delete"
+            android:title="@string/action_delete"
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/action_save"
+            android:title="@string/action_save"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_back"
+            android:title="@string/action_back"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_personal"
+            android:icon="@drawable/ic_action_personal"
+            android:title="personal"
+            app:showAsAction="always" />
+
+    <item
+            android:id="@+id/action_car"
+            android:icon="@drawable/ic_action_car"
+            android:title="car"
+            app:showAsAction="always" />
+
+
+
+</menu>
